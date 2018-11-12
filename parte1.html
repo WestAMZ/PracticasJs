@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="p-5">
+    <h3>Parrafo de texto</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                    <p>
+                            <strong class=".text-capitalize	">L</strong>orem ipsum dolor sit amet consectetur adipisicing elit. A <strong class=".text-warning">accusamus</strong> omnis illo nemo, ut iure itaque tempore <a href="#">voluptatibus</a> rem, dolorem ducimus debitis adipisci. Laboriosam rem, mollitia eum doloremque consequatur in.Distinctio perferendis <mark>labore  autem fugiat sit enim</mark>, vel excepturi hic veritatis accusamus! Saepe labore, quos ducimus eveniet provident ad pariatur eum doloremque.
+                    </p>
+            </div>
+            <div class="col-md-6">
+                    <p id="resultado">
+                            
+                    </p>
+            </div>
+        </div>
+    </div>
+  <script>
+      window.addEventListener("load",()=>{
+          var p  = document.getElementsByTagName("p").childNodes;
+
+          var text = "";
+          console.log(p);
+
+          /*p.forEach(element => {
+              text += element.text;
+          });*/
+          document.getElementById("resultado").innerHTML = text;
+      });
+  </script>
+</body>
+</html>
